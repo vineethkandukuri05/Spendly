@@ -1,0 +1,200 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+.header {
+  background: white;
+  padding: 16px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header p {
+  color: #555;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card,
+.panel {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.card p {
+  color: #555;
+}
+
+.card h2 {
+  font-size: 24px;
+}
+
+.balance {
+  border-top: 3px solid #555;
+}
+
+.income {
+  border-top: 3px solid #27834a;
+}
+
+.expenses {
+  border-top: 3px solid #c0392b;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.panel h2 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  color: #222;
+}
+
+form button {
+  margin-top: 8px;
+  padding: 11px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #222;
+}
+
+.empty {
+  color: #666;
+  padding: 20px 0;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction:last-child {
+  border-bottom: none;
+}
+
+.transaction p {
+  margin: 5px 0 0;
+  color: #666;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.transaction-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+}
+
+.green {
+  color: #27834a;
+}
+
+.red {
+  color: #c0392b;
+}
+
+.delete-button,
+.edit-button,
+.cancel-button {
+  padding: 5px 9px;
+  background: #eee;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover,
+.edit-button:hover,
+.cancel-button:hover {
+  background: #ddd;
+}
+
+@media (max-width: 700px) {
+  .summary,
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    padding: 15px 20px;
+  }
+
+  .header p {
+    font-size: 13px;
+  }
+}

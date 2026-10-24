@@ -1,0 +1,10 @@
+{
+  "name": "spendly",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Spendly - Personal Expense Tracker",
+  "scripts": {
+    "start:backend": "node backend/server.js",
+    "start:frontend": "npm --prefix frontend run dev"
+  }
+}

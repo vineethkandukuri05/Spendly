@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "id": 2,
+      "description": "Lunch",
+      "amount": 500,
+      "type": "expense",
+      "category": "Other",
+      "date": "2026-10-21"
+    },
+    {
+      "id": 5,
+      "description": "Pocket Money",
+      "amount": 5000,
+      "type": "income",
+      "category": "Other",
+      "date": "2026-10-21"
+    }
+  ],
+  "categories": [
+    "Food",
+    "Transport",
+    "College Fees",
+    "Shopping",
+    "Entertainment",
+    "Other"
+  ]
+}
